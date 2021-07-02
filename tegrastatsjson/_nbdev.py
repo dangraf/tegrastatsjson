@@ -2,9 +2,14 @@
 
 __all__ = ["index", "modules", "custom_doc_links", "git_url"]
 
-index = {}
+index = {"CommandGrabber": "00_command_grabber.ipynb",
+         "ParseTegrastats": "01_parser.ipynb",
+         "tegrastats_callback": "02_runner.ipynb",
+         "tegrastatsjson": "02_runner.ipynb"}
 
-modules = []
+modules = ["command_grabber.py",
+           "parser.py",
+           "runner.py"]
 
 doc_url = "https://dangraf.github.io/tegrastatsjson/"
 
