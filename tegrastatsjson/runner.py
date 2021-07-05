@@ -17,7 +17,7 @@ from nbdev.export import *
 # Cell
 def tegrastats_callback(tegra_line, filename='/var/output/tegra.json'):
     timestamp = str(datetime.now())
-    d = ParseTegrastats.parse_line(line)
+    d = ParseTegrastats.parse_line(tegra_line)
     d['timestamp'] = timestamp
     filename = filename
     with open(filename, 'a') as f:
