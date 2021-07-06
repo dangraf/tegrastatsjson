@@ -1,4 +1,6 @@
 #!/bin/bash
+set -e
+set -u
 
 if [[ "$(whoami)" != "root" ]]; then
 	echo "This installation must be run as root" 1>&2
@@ -20,7 +22,7 @@ helpFuntion()
     echo "-u: set 'user' name for the default user"
     
 }
-
+pip3 install .
 while getopts l:i:a:u: flag
 do
     case "${flag}" in
